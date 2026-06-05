@@ -45,7 +45,7 @@ export default function Home() {
       </div>
       
     </div>
-     <div className="Front-Deliverly-Wrapper">
+    <div className="Front-Deliverly-Wrapper">
       <div className="Front-Deliverly">
           <div className="Deliverly-1">
             <b><p>Curb-Side pickup</p></b>
@@ -60,6 +60,18 @@ export default function Home() {
             <b><p>Available to you 24/7</p></b>
           </div>
       </div>
+    </div>
+
+
+    <div className="BestSellers-Wrapper">
+      <div className="BestSellers">
+        {/* รอเก็บ Array Class สินค้า */}
+
+        <div className="BestSellers-1">
+          <img src="" alt="" />
+        </div>
+      </div>
+
     </div>
 
 
