@@ -66,6 +66,16 @@ export default function TechShedTemplate() {
           ))}
         </div>
       </section>
+       <section className="split-feature">
+        <div className="split-copy">
+          <span className="tag">Today Special</span>
+          <h2>Upgrade your setup with smarter tech</h2>
+          <p>Build a cleaner desk, sharper entertainment corner, and better everyday workflow with selected devices from our latest collection.</p>
+          <br/>
+          <button className="btn">Shop Deals</button>
+        </div>
+        <div className="split-image" aria-hidden="true" />
+      </section>
 
       <section className="promo">
         <div>
