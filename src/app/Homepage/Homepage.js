@@ -1,83 +1,115 @@
 
-export default function Home() {
-  return (
-  <>
-    <div className="HederSectionHome">
+import products from "../../../Product/Prodcts";
 
-    
-       <div className="HeroContent">
+
+
+
+
+
+
+export default function TechShedTemplate() {
+  return (
+    <main className="techshed-page">
+     
+
+      <section className="hero">
+        <div>
+          <span className="tag">Best Prices</span>
           <h1>Incredible Prices on All Your Favorite Items</h1>
           <p>Get more for less on selected brands</p>
-          <br/>
-          <button className="btn-buy">ShopNow</button>
+          <button className="btn">Shop Now</button>
         </div>
+      </section>
 
-
-    </div>
-
-
-
-    <div className="DealSection">
-      <div className="HolidayDeals">
-          <div className="HeroHoliday">
-            <p>Holiday Deals</p>
-            <br/>
-            <h1>Up to 30% off</h1>
-            <br/>
+      <section className="deal-grid" aria-label="Promotions">
+        <article className="deal" style={{ backgroundImage: "url(https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80)" }}>
+          <div className="deal-content">
+            <small>Holiday Deals</small>
+            <h2>Up to 30% off</h2>
             <p>Selected Smartphone Brands</p>
-            <br/>
-            <br/>
-            <button className="btn-shop">Shop</button>
+            <a href="#shop">Shop</a>
           </div>
-      </div>
-
-        <div className="Just-In">
-          <div className="HeroJustIn">
-            <p>Just In</p>
-            <br/>
-            <h1>Take Your Sound Anywhere</h1>
-            <br/>
+        </article>
+        <article className="deal" style={{ backgroundImage: "url(https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80)" }}>
+          <div className="deal-content">
+            <small>Just In</small>
+            <h2>Take Your Sound Anywhere</h2>
             <p>Top Headphone Brands</p>
-            <br/>
-            <br/>
-            <button className="btn-shop">Shop</button>
+            <a href="#shop">Shop</a>
           </div>
-      </div>
-      
-    </div>
-    <div className="Front-Deliverly-Wrapper">
-      <div className="Front-Deliverly">
-          <div className="Deliverly-1">
-            <b><p>Curb-Side pickup</p></b>
-          </div>
-          <div className="Deliverly-2">
-            <b><p>Free Shipping on Orders Over $50</p></b>
-          </div>
-          <div className="Deliverly-3">
-            <b><p>Low prices guaranteed</p></b>
-          </div>
-          <div className="Deliverly-4">
-            <b><p>Available to you 24/7</p></b>
-          </div>
-      </div>
-    </div>
+        </article>
+      </section>
 
+      <section className="services" aria-label="Store benefits">
+        <div className="service"><strong>Curb-side pickup</strong><span>Collect your order fast</span></div>
+        <div className="service"><strong>Free shipping</strong><span>On orders over $50</span></div>
+        <div className="service"><strong>Low prices guaranteed</strong><span>Everyday technology deals</span></div>
+        <div className="service"><strong>Available 24/7</strong><span>Support whenever you need</span></div>
+      </section>
 
-    <div className="BestSellers-Wrapper">
-      <div className="BestSellers">
-        {/* รอเก็บ Array Class สินค้า */}
-
-        <div className="BestSellers-1">
-          <img src="" alt="" />
+      <section className="section">
+        <div className="section-head">
+          <h2>Best Sellers</h2>
+          <a href="#all">View All</a>
         </div>
-      </div>
+        <div className="product-grid">
+          {products.map(([label, name, price, image]) => (
+            <article className="product" key={name}>
+              {label && <span className="sale">{label}</span>}
+              <img src={image} alt={name} />
+              <div className="product-body">
+                <h3>{name}</h3>
+                {label && <span className="regular">$85.00</span>}
+                <span className="price">{price}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-    </div>
+      <section className="promo">
+        <div>
+          <span>Best Price</span>
+          <h2>Save up to $150</h2>
+          <p>on selected laptop & tablet brands</p>
+          <a href="#shop">Shop</a>
+        </div>
+      </section>
 
+      <section className="newsletter">
+        <div>
+          <h2>Sign up for our newsletter</h2>
+          <p>Get updates about new arrivals and limited deals.</p>
+        </div>
+        <form>
+          <input aria-label="Email address" placeholder="Email address" />
+          <button className="btn" type="button">Subscribe</button>
+        </form>
+      </section>
 
-   
-    
-      
-  </>
+      <footer className="footer">
+        <div>
+          <div className="logo">TechShed</div>
+          <p>Modern electronics store template inspired by the Wix TechShed layout.</p>
+        </div>
+        <div>
+          <h3>Store</h3>
+          <a href="#shop">Shop All</a>
+          <a href="#sale">Sale</a>
+          <a href="#category">Categories</a>
+        </div>
+        <div>
+          <h3>Policy</h3>
+          <a href="#shipping">Shipping</a>
+          <a href="#returns">Returns</a>
+          <a href="#terms">Terms</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:1234567890">123-456-7890</a>
+          <a href="mailto:info@techshed.demo">info@techshed.demo</a>
+        </div>
+      </footer>
+    </main>
   );
-} 
+}
