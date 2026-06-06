@@ -100,7 +100,7 @@ export default function TechShedTemplate() {
       <footer className="footer">
         <div>
           <div className="logo">TechShed</div>
-          <p>Modern electronics store template inspired by the Wix TechShed layout.</p>
+          
         </div>
         <div>
           <h3>Store</h3>
