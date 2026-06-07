@@ -1,4 +1,5 @@
-
+import { categories } from "@/data/categories";
+import Link from "next/link";
 function Icon({ type }) {
   const common = {
     width: 24,
@@ -36,16 +37,7 @@ function Icon({ type }) {
   );
 }
 
-const categories = [
-  "Computers",
-  "Tablets",
-  "Drones & Cameras",
-  "Audio",
-  "Mobile",
-  "T.V & Home Cinema",
-  "Wearable Tech",
-  "Sale",
-];
+
 
 const NavbarCompounent = () => {
   return (
@@ -79,8 +71,19 @@ const NavbarCompounent = () => {
 
       
       <nav className="nav" aria-label="Product categories">
-        <span>Shop All</span>
-        {categories.map((item) => <span key={item}>{item}</span>)}
+           
+                <Link href="/ShopAllpage">
+                  Shop All
+                </Link>
+             
+              {categories.map((item) => (
+                <Link
+                  key={item}
+                  href={`/category/${encodeURIComponent(item)}`}
+                >
+                  {item}
+                </Link>
+              ))}
       </nav>
    </>
   )

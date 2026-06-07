@@ -1,5 +1,7 @@
 import TechShedTemplate from "./Homepage/Homepage";
+
 import NavbarCompounent from "../../components/NavbarCompounent";
+
 
 
 export default function Main() {
@@ -8,7 +10,9 @@ export default function Main() {
     
     <>
     <NavbarCompounent />
-      <TechShedTemplate />
+    <TechShedTemplate />
+ 
+  
     </>
       
   </>
