@@ -4,7 +4,7 @@ export const categories = [
   "DronesAndCameras",
   "Audio",
   "Mobile",
-  "TV&HomeCinema",
+  "TVHomeCinema",
   "WearableTech",
   "Sale",
 ];
