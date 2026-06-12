@@ -25,7 +25,7 @@ export default function TVHomeCinema() {
     <main className="cinema-page">
 
 
-      <section className="hero">
+      <section className="hero-TV">
         <div>
           <div className="breadcrumb">Home / T.V & Home Cinema</div>
           <h1>T.V & Home Cinema</h1>

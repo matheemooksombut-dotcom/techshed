@@ -26,7 +26,7 @@ export default function Tablets() {
   
 
 
-        <section className="hero">
+        <section className="hero-tablet">
           <div>
             <div className="breadcrumb">Home / Tablets</div>
             <h1>Tablets</h1>

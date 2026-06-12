@@ -22,7 +22,7 @@ export default function DronesAndCameras() {
     <NavbarCompounent/>
     <main className="drones-page">
 
-      <section className="hero">
+      <section className="hero-drone">
         <div>
           <div className="breadcrumb">Home / Drones & Cameras</div>
           <h1>Drones & Cameras</h1>

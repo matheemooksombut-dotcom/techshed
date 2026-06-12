@@ -7,7 +7,7 @@ export default function TechShedTemplate() {
       <main className="techshed-page">
       
 
-        <section className="hero">
+        <section className="hero-homepage">
           <div>
             <span className="tag">Best Prices</span>
             <h1>Incredible Prices on All Your Favorite Items</h1>

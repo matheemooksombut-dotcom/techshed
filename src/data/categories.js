@@ -6,5 +6,6 @@ export const categories = [
   "Mobile",
   "TVHomeCinema",
   "WearableTech",
-  "Sale",
+  "Sale"
+  
 ];
